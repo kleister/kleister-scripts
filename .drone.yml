@@ -1,0 +1,13 @@
+workspace:
+  path: src
+
+pipeline:
+  build:
+    image: webhippie/python:latest
+    commands:
+      - make deps
+      - make test
+
+  gitter:
+    image: plugins/gitter
+    secrets: [ gitter_webhook ]
