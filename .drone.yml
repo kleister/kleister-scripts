@@ -3,11 +3,13 @@ workspace:
 
 pipeline:
   build:
-    image: webhippie/python:latest
+    image: webhippie/python:2
+    pull: true
     commands:
       - make deps
       - make test
 
   gitter:
     image: plugins/gitter
+    pull: true
     secrets: [ gitter_webhook ]
