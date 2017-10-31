@@ -1,3 +1,5 @@
+HAS_BASHATE := $(shell command -v bashate)
+
 .PHONY: test
 test: bashate
 
@@ -7,4 +9,6 @@ bashate: bashate-deps
 
 .PHONY: bashate-deps
 bashate-deps:
+ifndef HAS_BASHATE
 	pip install bashate
+endif
