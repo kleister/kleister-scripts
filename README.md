@@ -6,18 +6,14 @@
 
 **This project is under heavy development, it's not in a working state yet!**
 
-Where does this name come from or what does it mean? It's quite simple, it's one
-german word for paste/glue, I thought it's a good match as it glues together the
-modpacks for Minecraft.
+Where does this name come from or what does it mean? It's quite simple, it's one german word for paste/glue, I thought it's a good match as it glues together the modpacks for Minecraft.
 
-This repository stores all the scripting used within the maintainance of the
-project and all the repositories.
+This repository stores all the scripting used within the maintainance of the project and all the repositories.
 
 
 ## Development
 
-If you are working on this repository you should make sure to test the code
-style properly. Just use the make tasks to check that.
+If you are working on this repository you should make sure to test the code style properly. Just use the make tasks to check that.
 
 ```
 make bashate
