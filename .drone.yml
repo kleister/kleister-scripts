@@ -2,17 +2,15 @@ workspace:
   path: src
 
 pipeline:
-  build:
+  scripts-bashate:
     image: webhippie/python:2
     pull: true
     commands:
-      - make deps
-      - make test
+      - make bashate
 
-  gitter:
+  notify-gitter:
     image: plugins/gitter:1
     pull: true
     secrets: [ gitter_webhook ]
     when:
       local: false
-      status: [ success, failure ]

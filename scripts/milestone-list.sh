@@ -2,7 +2,7 @@
 set -eo pipefail
 
 if ! hash ghi 2>/dev/null; then
-    echo "Failed to find ghi, please install that first!"
+    echo "failed to find ghi, please install that first!"
     exit 1
 fi
 
@@ -10,7 +10,7 @@ repos=(
     homebrew-kleister
     kleister-api
     kleister-cli
-    kleister-go
+    kleister-ui
 )
 
 for repo in "${repos[@]}"; do

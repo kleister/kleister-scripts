@@ -20,7 +20,7 @@ If you are working on this repository you should make sure to test the code
 style properly. Just use the make tasks to check that.
 
 ```
-make deps test
+make bashate
 ```
 
 
