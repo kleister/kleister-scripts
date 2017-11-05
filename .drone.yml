@@ -1,6 +1,9 @@
 workspace:
   path: src
 
+branches:
+  - master
+
 pipeline:
   test-bashate:
     image: webhippie/python:2
