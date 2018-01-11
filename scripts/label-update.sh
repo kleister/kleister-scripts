@@ -25,6 +25,7 @@ fi
 
 repos=(
     homebrew-kleister
+    kleister-ui
     kleister-api
     kleister-cli
     kleister-docs
