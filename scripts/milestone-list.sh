@@ -28,6 +28,11 @@ repos=(
     kleister-api
     kleister-cli
     kleister-ui
+    kleister-go
+    kleister-js
+    kleister-php
+    kleister-python
+    kleister-ruby
 )
 
 for repo in "${repos[@]}"; do

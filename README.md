@@ -21,6 +21,11 @@ make bashate
 ```
 
 
+## Security
+
+If you find a security issue please contact kleister@webhippie.de first.
+
+
 ## Contributing
 
 Fork -> Patch -> Push -> Pull Request
@@ -39,5 +44,5 @@ Apache-2.0
 ## Copyright
 
 ```
-Copyright (c) 2016 Thomas Boerger <http://www.webhippie.de>
+Copyright (c) 2018 Thomas Boerger <thomas@webhippie.de>
 ```

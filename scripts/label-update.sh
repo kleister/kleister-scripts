@@ -30,6 +30,11 @@ repos=(
     kleister-cli
     kleister-docs
     kleister-scripts
+    kleister-go
+    kleister-js
+    kleister-php
+    kleister-python
+    kleister-ruby
 )
 
 labels=(
