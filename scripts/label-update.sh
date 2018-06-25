@@ -30,6 +30,8 @@ repos=(
     kleister-cli
     kleister-docs
     kleister-scripts
+    kleister-android
+    kleister-ios
     kleister-go
     kleister-js
     kleister-php
