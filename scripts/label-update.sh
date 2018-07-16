@@ -37,6 +37,7 @@ repos=(
     kleister-php
     kleister-python
     kleister-ruby
+    kleister-infra
 )
 
 labels=(
