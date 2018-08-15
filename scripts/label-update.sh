@@ -38,6 +38,8 @@ repos=(
     kleister-python
     kleister-ruby
     kleister-infra
+    go-forge
+    go-minecraft
 )
 
 labels=(
