@@ -23,8 +23,8 @@ if [ -z "${DOCKER_USERNAME}" ]; then
     exit 1
 fi
 
-if [ -z "${DOCKER_USERNAME}" ]; then
-    echo "Please export DOCKER_USERNAME!"
+if [ -z "${DOCKER_PASSWORD}" ]; then
+    echo "Please export DOCKER_PASSWORD!"
     exit 1
 fi
 
@@ -52,9 +52,9 @@ for REPO in ${REPOS}; do
     esac
 
     DESCRIPTION=(
-        '# '"${TITLE}"' [![Build Status](http://drone.kleister.tech/api/badges/kleister/'"${REPO}"'/status.svg)](http://drone.kleister.tech/kleister/'"${REPO}"') [![](https://images.microbadger.com/badges/image/kleister/'"${REPO}"'.svg)](http://microbadger.com/images/kleister/'"${REPO}"' \"Get your own image badge on microbadger.com\")'
+        '# '"${TITLE}"' [![Build Status](http://cloud.drone.io/api/badges/kleister/'"${REPO}"'/status.svg)](http://cloud.drone.io/kleister/'"${REPO}"') [![](https://images.microbadger.com/badges/image/kleister/'"${REPO}"'.svg)](http://microbadger.com/images/kleister/'"${REPO}"' \"Get your own image badge on microbadger.com\")'
         '\n'
-        'Managed by [kleister/'"${REPO}"'](https://github.com/kleister/'"${REPO}"'), built and pushed with [Drone CI](http://drone.kleister.tech/kleister/'"${REPO}"').'
+        'Managed by [kleister/'"${REPO}"'](https://github.com/kleister/'"${REPO}"'), built and pushed with [Drone CI](http://cloud.drone.io/kleister/'"${REPO}"').'
     )
 
     PAYLOAD=$(mktemp)

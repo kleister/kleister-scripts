@@ -24,28 +24,31 @@ if ! hash ghi 2>/dev/null; then
 fi
 
 repos=(
-    homebrew-kleister
-    kleister-ui
+    go-forge
+    go-mcupdater
+    go-minecraft
+    kleister-android
     kleister-api
     kleister-cli
+    kleister-desktop
     kleister-docs
-    kleister-scripts
-    kleister-android
-    kleister-ios
     kleister-go
+    kleister-infra
+    kleister-ios
     kleister-js
     kleister-php
     kleister-python
     kleister-ruby
-    kleister-infra
-    go-forge
-    go-minecraft
+    kleister-scripts
+    kleister-ui
+    homebrew-kleister
 )
 
 labels=(
     bug:fc2929
     duplicate:cccccc
     enhancement:84b6eb
+    good\ first\ issue:7057ff
     hacktoberfest:d4c5f9
     help\ wanted:159818
     in\ progress:ededed
@@ -55,6 +58,8 @@ labels=(
     poc:c2e0c6
     question:cc317c
     ready:ededed
+    rebase:ffa8a5
+    renovate:1d76db
     third-party:e99695
     translation:b60205
     wontfix:5319e7
