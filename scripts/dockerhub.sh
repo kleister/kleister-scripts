@@ -52,9 +52,9 @@ for REPO in ${REPOS}; do
     esac
 
     DESCRIPTION=(
-        '# '"${TITLE}"' [![Build Status](http://cloud.drone.io/api/badges/kleister/'"${REPO}"'/status.svg)](http://cloud.drone.io/kleister/'"${REPO}"') [![](https://images.microbadger.com/badges/image/kleister/'"${REPO}"'.svg)](http://microbadger.com/images/kleister/'"${REPO}"' \"Get your own image badge on microbadger.com\")'
+        '# '"${TITLE}"' [![Build Status](https://cloud.drone.io/api/badges/kleister/'"${REPO}"'/status.svg)](https://cloud.drone.io/kleister/'"${REPO}"') [![](https://images.microbadger.com/badges/image/kleister/'"${REPO}"'.svg)](http://microbadger.com/images/kleister/'"${REPO}"' \"Get your own image badge on microbadger.com\")'
         '\n'
-        'Managed by [kleister/'"${REPO}"'](https://github.com/kleister/'"${REPO}"'), built and pushed with [Drone CI](http://cloud.drone.io/kleister/'"${REPO}"').'
+        'Managed by [kleister/'"${REPO}"'](https://github.com/kleister/'"${REPO}"'), built and pushed with [Drone CI](https://cloud.drone.io/kleister/'"${REPO}"').'
     )
 
     PAYLOAD=$(mktemp)
