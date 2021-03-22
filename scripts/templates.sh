@@ -74,8 +74,7 @@ for REPO in $(curl --silent https://api.github.com/users/kleister/repos | jq -r 
             sed "s/REPO_NAME/${NAME}/" < "${ROOT}/templates/settings.tmpl" >| .github/settings.yml
         fi
 
-        git add --all
-        git commit -m 'Updated standard templates'
+        git add --all && git commit -m 'Updated standard templates' || true
     popd >/dev/null
 
     rm -rf "${WORKDIR}"
